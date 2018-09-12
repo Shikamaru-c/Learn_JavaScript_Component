@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test CSlider</title>
+</head>
+<body>
+
+  <!-- 你只需要为外层div设置宽高即可 -->
+  <div class="slider" style="width: 600px; height: 300px;">
+
+    <!-- 你不用设置ul/li的任何样式 -->
+    <ul>
+      <li style="background: #777;"></li>
+      <li style="background: rgb(255, 119, 142);"></li>
+      <li style="background: red;"></li>
+      <li style="background: yellow;"></li>
+      <li style="background: green"></li>
+    </ul>
+
+  </div>
+
+  <!-- 引入CSlider插件 -->
+  <script src="CSlider.js"></script>
+
+  <script>
+
+    // 获取DOM
+    let slider = document.querySelector('.slider')
+
+    // 在第一个参数传入外层(设置了你所需要的宽和高),然后你还可以设置第二个参数(options)
+    slider = new CSlider(slider, {
+      interval: 2000, // type Number 每隔几秒自动切换
+      speed: 700, // type Number 切换场景的耗时
+      threshold: 300 // type Number 滑动切换时的阈值(默认是图片的二分之一)
+    })
+
+  </script>
+</body>
+</html>

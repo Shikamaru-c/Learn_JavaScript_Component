@@ -1,0 +1,19 @@
+{
+  "name": "cscroll",
+  "version": "1.0.0",
+  "description": "一款原生JS完成的移动端滚动插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenchaochao/CScroll.git"
+  },
+  "author": "CENCHAOCHAO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cenchaochao/CScroll/issues"
+  },
+  "homepage": "https://github.com/cenchaochao/CScroll#readme"
+}
